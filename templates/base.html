@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hexdump: {{title}}</title>
+    {{style|safe}} {{script|safe}}
+</head>
+
+<body>
+    <div class="grid container">
+        <div class="grid address">
+            {% for row in range(address_count) %}
+            <div id="row-{{ row }}"> {{padded_hex(row, 8)}} </div>
+            {%endfor%}
+        </div>
+        <div class="grid data">
+            {% for byte_data in byte_list %}
+            <div id="data-{{byte_data.index }}" class="{% if byte_data.is_char() %} has-ascii {% endif %}" onclick="onClick(  {{ byte_data.index }} );" onmouseover="onHover( {{ byte_data.index }} );" onmouseleave="unHover( {{ byte_data.index }} );">
+                {{ byte_data.hex() }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="grid ascii">
+            {% for byte_data in byte_list %}
+            <div id="ascii-{{byte_data.index }}" onclick="onClick(  {{ byte_data.index }} );" onmouseover="onHover( {{ byte_data.index }} );" onmouseleave="unHover( {{ byte_data.index }} );">
+                {% if byte_data.is_char() %} {{ byte_data.chr() }} {% else %} . {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+
+</html>

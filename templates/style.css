@@ -1,0 +1,87 @@
+* {
+    background-color: #2C272E;
+    color: whitesmoke
+}
+
+.grid {
+    display: grid;
+    grid-gap: 5px;
+    /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.grid>div {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    min-width: 762px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.address {
+    grid-template-columns: auto;
+    min-width: 70px;
+    flex-grow: 1;
+}
+
+.data {
+    grid-template-columns: repeat(16, auto);
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    border-top: none;
+    border-bottom: none;
+    min-width: 500px;
+    flex-grow: 8;
+}
+
+.ascii {
+    grid-template-columns: repeat(16, auto);
+    min-width: 192px;
+    flex-grow: 1;
+}
+
+.has-ascii:not(.highlight-1, .highlight-2, .highlight-3) {
+    color: #df3838;
+}
+
+.magic-bytes {
+    color: #F58840;
+}
+
+.selected {
+    background-color: #fff !important;
+    color: black;
+}
+
+.highlight-1 {
+    color: #b118db;
+}
+
+.highlight-2 {
+    color: #e08815;
+}
+
+.highlight-3 {
+    color: #62df19;
+}
+
+.highlight-4 {
+    color: #19b1df;
+}
