@@ -1,8 +1,8 @@
 <h1 align="center"> HTMLHexViewer </h1>
 
 <p align="center">
-<a href="https://pypi.org/project/black/"><img alt="PyPI" src="https://img.shields.io/pypi/v/htmlhexviewer"></a>
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+<a href="https://pypi.org/project/htmlhexdump/"><img alt="PyPI" src="https://img.shields.io/pypi/v/htmlhexviewer"></a>
+<a href="https://github.com/Vepnar/htmlhexdump"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
 
 > Hexdump but easier to read.
@@ -33,3 +33,7 @@ The peformance drop on even small applications is very large. Thus these flags a
 ![image](images/one.png)
 
 [youtube video](https://youtu.be/wlghJ6R6D_g)
+
+## Credits
+- [Black](https://github.com/psf/black). This markdown page has been inspired by them.
+- Hexdump. This application is a remake of hexdump.
