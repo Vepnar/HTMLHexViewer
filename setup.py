@@ -18,8 +18,9 @@ def get_long_description() -> str:
 
 setup(
     name="HTMLHexViewer",
-    version="0.1.0",
+    version="0.1.2",
     description="Create simple hexdumps from any file",
+    long_description_content_type='text/markdown',
     long_description=get_long_description(),
     author="Arjan de Haan",
     author_email="agdehaan@gmail.com",

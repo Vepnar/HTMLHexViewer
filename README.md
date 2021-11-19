@@ -30,9 +30,8 @@ It's recommended to set a max length of processed byte sequence with the paramet
 The peformance drop on even small applications is very large. Thus these flags are a must.
 
 ## Example of usage & screenshots
-![image](images/one.png)
-
-[youtube video](https://youtu.be/wlghJ6R6D_g)
+[Image](images/one.png)
+[YouTube Video](https://youtu.be/wlghJ6R6D_g)
 
 ## Credits
 - [Black](https://github.com/psf/black). This markdown page has been inspired by them.
