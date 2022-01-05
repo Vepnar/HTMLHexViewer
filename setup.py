@@ -25,7 +25,7 @@ setup(
     author="Arjan de Haan",
     author_email="agdehaan@gmail.com",
     url="https://github.com/Vepnar/HTMLHexViewer",
-    license="GPL-3",
+    license="MIT",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     python_requires=">=3.6.2",
